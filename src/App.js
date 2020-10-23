@@ -1,22 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import logo from './logo.svg'
 import './App.css'
 
 import 'assets/styles.scss'
 
-import apiClient from 'utils/feathersClient'
-
 function App() {
-	const fetchData = async () => {
-		const response = await apiClient.service('users').find()
-		console.log('erponse', response)
-	}
-
-	useEffect(() => {
-		fetchData()
-	}, [])
-
 	return (
 		<div className="App">
 			<header className="App-header">
