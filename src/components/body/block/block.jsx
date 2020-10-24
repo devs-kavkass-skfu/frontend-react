@@ -12,7 +12,7 @@ const Block =(props)=>{
                  <img src="http://placehold.it/34x50" />
                 <div className={s.text}> <p>Стажёр-разработчик</p>
                 <p>Fullstack Development</p>
-                <p className={s.green}>От 25 000 до 50 000 ₽</p></div>  
+                <p className={s.green}>От 15 000 до 50 000 ₽</p></div>  
             </div>
            
             </div>
