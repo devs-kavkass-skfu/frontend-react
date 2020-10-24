@@ -1,22 +1,13 @@
-import Header from 'components/header/header'
-import MakeSummery from 'components/MakeSummer/MakeSummer'
-import Futter from 'components/footer/footer'
-import React from 'react' 
-import s from './summery.module.css'
+import MakeSummery from 'components/MakeSummer/MakeSummer';
+import React from 'react';
+import s from './summery.module.css';
 
+const Summery = props => {
+  return (
+    <div className={s.all}>
+      <MakeSummery />
+    </div>
+  );
+};
 
-const Summery =(props)=>{
-    
-    return (
-        <div className={s.all}>
-            <Header/>
-            <MakeSummery/>
-            <Futter/>
-        
-            
-        </div>
-       
-    )
-}
-
-export default Summery  
+export default Summery;

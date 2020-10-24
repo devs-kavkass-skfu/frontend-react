@@ -1,11 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import s from './serch.module.css';
 import app from 'assets/images/app.svg';
 import play from 'assets/images/paly.png';
 
 const Serch = props => {
+  const history = useHistory();
+
   return (
     <div className={s.head}>
       <main className={s.bg}>
@@ -19,7 +21,9 @@ const Serch = props => {
             </ul>
           </div>
           <div className={s.auth}>
-            <button className={s.b1}>Создать резюме</button>
+            <button className={s.b1} onClick={() => history.push('/summery')}>
+              Создать резюме
+            </button>
             <Link className={s.b2} to="/auth">
               Войти
             </Link>
@@ -30,7 +34,7 @@ const Serch = props => {
           <h1>Работа найдется для каждого студента</h1>
           <div className={s.com}>
             <input type="text" />
-            <button>Найти</button>
+            <button onClick={() => history.push('/search/resumes')}>Найти</button>
           </div>
         </div>
         <div className={s.footer}>
