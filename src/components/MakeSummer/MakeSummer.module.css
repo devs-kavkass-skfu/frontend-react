@@ -1,0 +1,44 @@
+.sam {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: table;
+}
+
+.fg {
+  display: table-row;
+}
+.fg label,
+.fg input {
+  display: table-cell;
+}
+
+.form {
+  width: 651px;
+  height: 38px;
+}
+
+.form1 {
+  width: 136px;
+  height: 38px;
+}
+
+.form2 {
+  width: 651px;
+  height: 286px;
+}
+
+.form6 {
+  width: 651px;
+  height: 90px;
+}
