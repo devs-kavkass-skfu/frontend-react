@@ -1,0 +1,14 @@
+.all{
+    background-color: #212122;
+    display: flex;
+    justify-content: center;
+    width: 1920px;
+    height: 305px;
+}
+
+.container{
+    
+    width: 1170px;
+    height: 246px;
+    border-bottom: white solid 3px;
+}

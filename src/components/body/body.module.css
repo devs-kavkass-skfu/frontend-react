@@ -1,0 +1,49 @@
+.body{
+    background-color: #F8F8F8;
+    margin-bottom: 40px;
+}
+
+.title1{
+    display: flex;
+    justify-content: center;
+}
+.title2{
+    display: flex;
+    justify-content: center;
+}
+.maf{
+    padding-top: 60px;
+}
+
+.title1 h2{
+    font-size: 35px;
+}
+
+.title2 h2{
+    font-size: 15px;
+}
+
+.block{
+    width: 1000px;
+    flex-wrap:wrap;
+    display: flex;
+    margin-left: 481px ;
+}
+
+.block div{
+    margin: 5px;
+}
+.bt{
+    margin-top: 65px ;
+    display: flex;
+    justify-content: center;
+}
+
+.bt button{
+    width: 229px;
+    height: 66px;
+    color: white;
+    font-size: 22px;
+    background: #007AFF;
+    border-radius: 5px;
+}

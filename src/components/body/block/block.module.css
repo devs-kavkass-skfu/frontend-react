@@ -1,0 +1,23 @@
+
+
+
+.head{
+    display: flex;
+    width: 468px;
+    height: 108px;
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+}
+
+.head img{
+    margin: 15px;
+}
+
+.text p {
+    margin: 5px;
+}
+
+.green{
+    color: #20BF6B;
+}
