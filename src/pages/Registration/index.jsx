@@ -1,12 +1,13 @@
 import React from 'react';
 // import { Form, Input, Card } from 'antd';
 import { Form, Field } from 'react-final-form';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useHistory } from 'react-router-dom';
 
 import apiClient from 'utils/feathersClient';
 
 const Registration = () => {
   const location = useLocation();
+  const history = useHistory();
 
   const registrationType = location.pathname.includes('employer') ? 'employer' : 'applicant';
 
@@ -18,6 +19,7 @@ const Registration = () => {
       };
 
       await apiClient.service('users').create(data);
+      history.push('/auth');
     } catch (e) {
       console.error('Не удалось создать юзера', e);
     }
