@@ -1,15 +1,14 @@
 import React from 'react';
 // import { Form, Input, Card } from 'antd';
 import { Form, Field } from 'react-final-form';
-// import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 import apiClient from 'utils/feathersClient';
 
 const Registration = () => {
-  // const location = useLocation();
+  const location = useLocation();
 
-  const registrationType = 'applicant';
-  // const registrationType = location.pathname.includes('employer') ? 'employer' : 'applicant';
+  const registrationType = location.pathname.includes('employer') ? 'employer' : 'applicant';
 
   const onSubmit = async values => {
     try {
