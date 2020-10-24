@@ -132,22 +132,22 @@ const ExtendedSearch = () => {
               </div>
 
               <div className="form-table__field">
-                <label htmlFor="password">Зарплата:</label>
+                <label htmlFor="salaryFrom">Зарплата:</label>
                 <div style={{ display: 'flex' }}>
                   <Field
                     style={{ marginRight: '20px' }}
-                    id="password"
-                    name="password"
+                    id="salaryFrom"
+                    name="salaryFrom"
                     component="input"
-                    type="password"
+                    type="number"
                     placeholder="От"
                     className="form-table__field-cell"
                   />
                   <Field
-                    id="password"
-                    name="password"
+                    id="salaryTo"
+                    name="salaryTo"
                     component="input"
-                    type="password"
+                    type="number"
                     placeholder="До"
                     className="form-table__field-cell"
                   />
