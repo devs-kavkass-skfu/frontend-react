@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Form, Input, Card } from 'antd';
 import { Form, Field } from 'react-final-form';
-import { useLocation, useHistory } from 'react-router-dom';
+import { useLocation, useHistory, Link } from 'react-router-dom';
 
 import apiClient from 'utils/feathersClient';
 
@@ -95,58 +95,6 @@ const Registration = () => {
                   </div>
                 )}
 
-                {registrationType === 'applicant' && (
-                  <div className="form-table__field">
-                    <label htmlFor="age.day">Дата рождения:</label>
-                    <div className="form-table__field-cell form-table__field-birth">
-                      <div>
-                        <Field
-                          id="age.day"
-                          name="age.day"
-                          component="input"
-                          type="number"
-                          placeholder="День"
-                        />
-                        <Field
-                          name="age.month"
-                          component="input"
-                          type="number"
-                          placeholder="Месяц"
-                        />
-                        <Field name="age.year" component="input" type="number" placeholder="Год" />
-                      </div>
-                    </div>
-                  </div>
-                )}
-
-                {registrationType === 'applicant' && (
-                  <div className="form-table__field">
-                    <label>Пол:</label>
-                    <div className="form-table__field-cell form-table__field-radio">
-                      <div>
-                        <Field
-                          id="gender-male"
-                          name="gender"
-                          component="input"
-                          type="radio"
-                          value="male"
-                        />
-                        <label htmlFor="gender-male">Мужской</label>
-                      </div>
-                      <div>
-                        <Field
-                          id="gender-female"
-                          name="gender"
-                          component="input"
-                          type="radio"
-                          value="female"
-                        />
-                        <label htmlFor="gender-female">Женский</label>
-                      </div>
-                    </div>
-                  </div>
-                )}
-
                 <div className="form-table__field">
                   <label htmlFor="password">Пароль:</label>
                   <Field
@@ -180,7 +128,7 @@ const Registration = () => {
 
               <p className="form-table__info">
                 Уже есть аккаунт {registrationType === 'employer' ? 'работодателя' : 'соискателя'}?
-                Авторизоваться
+                <Link to="/auth">Авторизоваться</Link>
               </p>
             </div>
           )}

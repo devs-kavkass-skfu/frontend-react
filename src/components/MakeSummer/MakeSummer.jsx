@@ -15,7 +15,6 @@ const MakeSummery = () => (
     <div className={s.sam}>
       <Form
         onSubmit={onSubmit}
-        initialValues={{ stooge: 'larry', employed: false }}
         render={({ handleSubmit, form, submitting, pristine, values }) => (
           <form className={s.container} onSubmit={handleSubmit}>
             <div className={s.fg}>

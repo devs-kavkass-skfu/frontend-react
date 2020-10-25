@@ -64,6 +64,9 @@
 .serch input {
   width: 670px;
   height: 46px;
+  padding: 0 12px;
+  font-size: 16px;
+  outline: none;
 }
 
 .serch button {
@@ -72,9 +75,16 @@
   background: #007aff;
   color: white;
   border: none;
+  outline: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.serch button:hover {
+  opacity: 0.9;
 }
 .com {
   margin-right: 91px;
+  position: relative;
 }
 .com button {
   height: 46px;

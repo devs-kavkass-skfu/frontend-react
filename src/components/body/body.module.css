@@ -1,49 +1,56 @@
-.body{
-    background-color: #F8F8F8;
-    margin-bottom: 40px;
+.body {
+  background-color: #f8f8f8;
+  margin-bottom: 40px;
 }
 
-.title1{
-    display: flex;
-    justify-content: center;
+.title1 {
+  display: flex;
+  justify-content: center;
 }
-.title2{
-    display: flex;
-    justify-content: center;
+.title2 {
+  display: flex;
+  justify-content: center;
 }
-.maf{
-    padding-top: 60px;
-}
-
-.title1 h2{
-    font-size: 35px;
+.maf {
+  padding-top: 60px;
 }
 
-.title2 h2{
-    font-size: 15px;
+.title1 h2 {
+  font-size: 35px;
 }
 
-.block{
-    width: 1000px;
-    flex-wrap:wrap;
-    display: flex;
-    margin-left: 481px ;
+.title2 h2 {
+  font-size: 15px;
 }
 
-.block div{
-    margin: 5px;
-}
-.bt{
-    margin-top: 65px ;
-    display: flex;
-    justify-content: center;
+.block {
+  width: 1000px;
+  flex-wrap: wrap;
+  display: flex;
+  margin-left: 481px;
 }
 
-.bt button{
-    width: 229px;
-    height: 66px;
-    color: white;
-    font-size: 22px;
-    background: #007AFF;
-    border-radius: 5px;
+.block div {
+  margin: 5px;
+}
+.bt {
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+}
+
+.bt button {
+  width: 229px;
+  height: 66px;
+  color: white;
+  font-size: 22px;
+  background: #007aff;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.bt button:hover {
+  opacity: 0.9;
 }

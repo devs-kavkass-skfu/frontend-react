@@ -1,0 +1,22 @@
+.view-container {
+  width: 900px;
+  margin: auto;
+  background-color: #f8f8f8;
+  padding-bottom: 80px;
+  border: 1px solid black;
+  border-top: 0;
+}
+
+.view {
+  margin-left: 40px;
+  border-spacing: 5px 20px;
+  border-collapse: separate;
+  display: table;
+  &__row {
+    display: table-row;
+  }
+  &__cell {
+    padding: 4px 10px;
+    display: table-cell;
+  }
+}

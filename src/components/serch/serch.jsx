@@ -1,12 +1,19 @@
 import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
 
+import { getUser } from 'utils';
+
 import s from './serch.module.css';
 import app from 'assets/images/app.svg';
 import play from 'assets/images/paly.png';
 
+import { ReactComponent as SearchIcon } from 'assets/images/search-icon.svg';
+
 const Serch = props => {
   const history = useHistory();
+  const user = getUser();
+
+  const gotoSearch = user.role === 'employer' ? 'resumes' : 'vacancies';
 
   return (
     <div className={s.head}>
@@ -21,12 +28,15 @@ const Serch = props => {
             </ul>
           </div>
           <div className={s.auth}>
-            <button className={s.b1} onClick={() => history.push('/summery')}>
+            {/* <button className={s.b1} onClick={() => history.push('/summery')}>
               Создать резюме
-            </button>
-            <Link className={s.b2} to="/auth">
-              Войти
-            </Link>
+            </button> */}
+
+            {!user._id && (
+              <Link className={s.b2} to="/auth">
+                Войти
+              </Link>
+            )}
             {/* <button className={s.b2}>Войти</button> */}
           </div>
         </div>
@@ -34,7 +44,11 @@ const Serch = props => {
           <h1>Работа найдется для каждого студента</h1>
           <div className={s.com}>
             <input type="text" />
-            <button onClick={() => history.push('/search/resumes')}>Найти</button>
+            <SearchIcon
+              className="ext-search"
+              onClick={() => history.push(`/results/${gotoSearch}`)}
+            />
+            <button onClick={() => history.push(`/search/${gotoSearch}`)}>Найти</button>
           </div>
         </div>
         <div className={s.footer}>
@@ -50,8 +64,8 @@ const Serch = props => {
             </li>
           </ul>
           <div className={s.img}>
-            <img src={app} alt="" />
-            <img src={play} alt="" />
+            <img src={app} alt="af" />
+            <img src={play} alt="asdf" />
           </div>
         </div>
       </main>

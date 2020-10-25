@@ -38,6 +38,8 @@
   width: 265px;
   height: 38px;
   margin-bottom: 31px;
+  padding: 0 10px;
+  outline: none;
 }
 
 .text {

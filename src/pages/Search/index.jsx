@@ -14,14 +14,14 @@ const ExtendedSearch = () => {
   const onSubmit = async values => {
     try {
       const query = {
-        $search: values.keywords,
+        // $search: values.keywords,
         specialization: values.specialization,
-        skills: values.skill.split(', '),
         occupationType: values.occupationType,
         salaryFrom: values.salaryFrom,
         salaryTo: values.salaryTo,
       };
 
+      console.log('query', query);
       const response = await apiClient.service(searchType).find({ query });
       console.log('respnse', response);
       // history.push('/auth');
@@ -35,7 +35,7 @@ const ExtendedSearch = () => {
       <Form
         onSubmit={onSubmit}
         initialValues={{ gender: 'male' }}
-        render={({ handleSubmit, pristine, submitting }) => (
+        render={({ handleSubmit, pristine }) => (
           <div className="form-table ">
             <h2 className="form-table__title">
               Поиск {searchType === 'vacancies' ? 'вакансий' : 'по резюме'}
@@ -81,9 +81,9 @@ const ExtendedSearch = () => {
               {searchType === 'resumes' && (
                 <>
                   <div className="form-table__field">
-                    <label htmlFor="phone">Закончил университет:</label>
+                    <label htmlFor="hasDegree">Закончил университет:</label>
                     <Field
-                      id="phone"
+                      id="hasDegree"
                       name="hasDegree"
                       component="input"
                       type="checkbox"
@@ -91,9 +91,9 @@ const ExtendedSearch = () => {
                     />
                   </div>
                   <div className="form-table__field">
-                    <label htmlFor="phone">Есть опыт:</label>
+                    <label htmlFor="hasExperience">Есть опыт:</label>
                     <Field
-                      id="phone"
+                      id="hasExperience"
                       name="hasExperience"
                       component="input"
                       type="checkbox"

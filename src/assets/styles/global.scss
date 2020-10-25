@@ -90,6 +90,15 @@ input[type='number'] {
     outline: none;
   }
 
+  textarea {
+    resize: vertical;
+    padding: 6px 8px;
+    background-color: #ebebeb;
+    border: 1px solid #6d86a8;
+    outline: none;
+    width: 100%;
+  }
+
   &__submit {
     padding: 10px 14px;
     border: none;
@@ -107,6 +116,14 @@ input[type='number'] {
   }
   &__info {
     font-size: 12px;
+    a {
+      margin-left: 10px;
+      color: blue;
+      transition: 0.2s;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
   }
 
   &__field {
@@ -114,6 +131,7 @@ input[type='number'] {
   }
   label,
   &__field-cell {
+    vertical-align: top;
     width: 50%;
     display: table-cell;
   }
@@ -148,4 +166,68 @@ input[type='number'] {
 
 .bg-white {
   background-color: white;
+}
+
+.big-textarea {
+  height: 200px;
+}
+
+.small-textarea {
+  height: 100px;
+}
+
+.vacancy-form-container {
+  width: 900px;
+  margin: auto;
+  background-color: #f8f8f8;
+  padding-bottom: 80px;
+  border: 1px solid black;
+  border-top: 0;
+}
+
+.radio-group-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  > div {
+    display: flex;
+    margin-bottom: 15px;
+    width: 100%;
+
+    > label {
+      width: 100%;
+      text-align: left;
+      margin-left: 10px;
+    }
+  }
+}
+
+.create-vacancy-button {
+  padding: 8px 12px;
+  border: 1px solid #163e73;
+  border-radius: 18px;
+  color: #163e73;
+  font-weight: bold;
+  transition: opacity 0.2s;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.logout {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.ext-search {
+  position: absolute;
+  top: 10px;
+  right: 110px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
 }

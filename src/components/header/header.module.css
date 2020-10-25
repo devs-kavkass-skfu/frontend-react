@@ -6,6 +6,7 @@
   justify-content: space-around;
   align-items: center;
   color: #163e73;
+  border-bottom: 1px solid black;
 }
 
 a {
