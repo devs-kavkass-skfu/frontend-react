@@ -1,0 +1,42 @@
+.main {
+  background: #f8f8f8;
+}
+.title h2,
+.title p {
+  display: flex;
+  justify-content: center;
+}
+.title h2 {
+  font-size: 35px;
+}
+.cont {
+  background: #ffffff;
+  width: 170px;
+  height: 170px;
+  margin: 30px;
+}
+.company {
+  display: flex;
+  justify-content: center;
+}
+.top,
+.butt {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn {
+  margin-bottom: 65px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn button {
+  width: 229px;
+  height: 66px;
+  color: white;
+  font-size: 22px;
+  background: #007aff;
+  border-radius: 5px;
+}
