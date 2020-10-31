@@ -14,3 +14,15 @@ a {
   color: inherit;
   margin-right: 10px;
 }
+
+.logo {
+  display: flex;
+}
+.logo p {
+  font-size: 20px;
+  margin-left: 5px;
+}
+.logo img {
+  width: 67px;
+  height: 67px;
+}

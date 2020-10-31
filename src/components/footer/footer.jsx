@@ -37,7 +37,7 @@ const Footer =(props)=>{
                     </ul>
                 </div>
                 <div className={s.link}>
-                    <div><img src={logo} alt=""/></div>
+                    {/* <div><img src={logo} alt=""/></div> */}
                     <div>
                         <img src={ins} alt=""/>
                         <img src={fb} alt=""/>

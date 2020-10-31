@@ -5,7 +5,7 @@ import { getUser, setUser } from 'utils';
 import apiClient from 'utils/feathersClient';
 
 import s from './header.module.css';
-import logo from 'assets/images/logo.svg';
+import logo2 from 'assets/images/logo.svg';
 
 import { ReactComponent as AvatarIcon } from 'assets/images/avatar-logout.svg';
 
@@ -27,11 +27,12 @@ const Header = props => {
     <div className={s.head}>
       <div className={s.logo}>
         <img
-          src={logo}
+          src={logo2}
           alt="logo"
           style={{ cursor: 'pointer' }}
           onClick={() => history.push('/')}
         />
+        <p>Спешу работать</p>
       </div>
 
       <div style={{ display: 'flex', alignItems: 'center' }}>
